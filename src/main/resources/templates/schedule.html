@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurer la Planification</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .form-check-label {
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .mt-3 {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Configurer la Planification de Sauvegarde</h1>
+    <form action="/schedule/configure" method="post" class="mb-4" onsubmit="return formatDateTime()">
+        <div class="mb-3">
+            <label for="dateTime" class="form-label">Date et Heure de la Sauvegarde</label>
+            <input type="text" class="form-control" id="dateTime" name="dateTime" placeholder="yyyy-MM-dd HH:mm:ss" required>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="isIncremental" name="isIncremental" checked>
+            <label class="form-check-label" for="isIncremental">Sauvegarde Incrémentielle</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Configurer la Sauvegarde</button>
+    </form>
+</div>
+
+<script>
+    function formatDateTime() {
+        const dateTimeInput = document.getElementById("dateTime");
+        const dateTimeValue = dateTimeInput.value; // Format yyyy-MM-ddTHH:mm
+        console.log("Valeur initiale : ", dateTimeValue);
+
+        if (dateTimeValue) {
+            // Convertir en yyyy-MM-dd HH:mm:ss
+            const formattedDateTime = dateTimeValue.replace("T", " ") + ":00";
+            dateTimeInput.value = formattedDateTime;
+            console.log("Valeur formatée : ", formattedDateTime);
+            return true; // Permet la soumission du formulaire
+        } else {
+            alert("Veuillez saisir une date et une heure valides.");
+            return false; // Bloque la soumission du formulaire
+        }
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

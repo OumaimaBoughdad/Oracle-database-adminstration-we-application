@@ -1,0 +1,970 @@
+ASH Report
+===============================
+Sample ID: 78900235479
+Sample Time: 2025-01-01 04:22:20.144
+Session ID: 213
+Session Type: FOREGROUND
+SQL ID: f0trr0w255hfy
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: driver id
+Parameter 2: #bytes
+Parameter 3: null
+
+Sample ID: 78900235210
+Sample Time: 2025-01-01 04:17:40.407
+Session ID: 213
+Session Type: FOREGROUND
+SQL ID: f0h18h0ck0qk1
+SQL Operation: CREATE USER
+Wait Event: null
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900235159
+Sample Time: 2025-01-01 04:16:47.37
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900235134
+Sample Time: 2025-01-01 04:16:21.373
+Session ID: 37
+Session Type: BACKGROUND
+SQL ID: 3dbzmtf9ahvzt
+SQL Operation: UPSERT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900235111
+Sample Time: 2025-01-01 04:15:57.456
+Session ID: 167
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900235089
+Sample Time: 2025-01-01 04:15:34.578
+Session ID: 23
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900235011
+Sample Time: 2025-01-01 04:14:13.465
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234995
+Sample Time: 2025-01-01 04:13:56.826
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: 0npm6czzaj44m
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234962
+Sample Time: 2025-01-01 04:13:22.508
+Session ID: 213
+Session Type: FOREGROUND
+SQL ID: g95m1mywrdmu2
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900234956
+Sample Time: 2025-01-01 04:13:16.26
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234903
+Sample Time: 2025-01-01 04:12:21.153
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234881
+Sample Time: 2025-01-01 04:11:58.275
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234828
+Sample Time: 2025-01-01 04:11:03.16
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234817
+Sample Time: 2025-01-01 04:10:51.72
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: b7wvutrbhf7jg
+SQL Operation: UPSERT
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900234816
+Sample Time: 2025-01-01 04:10:50.68
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900234815
+Sample Time: 2025-01-01 04:10:49.64
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900234814
+Sample Time: 2025-01-01 04:10:48.6
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900234813
+Sample Time: 2025-01-01 04:10:47.56
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900234812
+Sample Time: 2025-01-01 04:10:46.522
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: ampw9ddqufjd3
+SQL Operation: PL/SQL EXECUTE
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900234786
+Sample Time: 2025-01-01 04:10:19.482
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234751
+Sample Time: 2025-01-01 04:09:43.085
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234700
+Sample Time: 2025-01-01 04:08:50.046
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234689
+Sample Time: 2025-01-01 04:08:38.605
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: driver id
+Parameter 2: #bytes
+Parameter 3: null
+
+Sample ID: 78900234676
+Sample Time: 2025-01-01 04:08:25.085
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234674
+Sample Time: 2025-01-01 04:08:23.005
+Session ID: 3
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234655
+Sample Time: 2025-01-01 04:08:03.253
+Session ID: 167
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234646
+Sample Time: 2025-01-01 04:07:53.893
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234642
+Sample Time: 2025-01-01 04:07:49.76
+Session ID: 48
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900234641
+Sample Time: 2025-01-01 04:07:48.693
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900234636
+Sample Time: 2025-01-01 04:07:43.521
+Session ID: 3
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234580
+Sample Time: 2025-01-01 04:06:45.286
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234577
+Sample Time: 2025-01-01 04:06:42.166
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234533
+Sample Time: 2025-01-01 04:05:56.409
+Session ID: 23
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234526
+Sample Time: 2025-01-01 04:05:49.129
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234506
+Sample Time: 2025-01-01 04:05:27.54
+Session ID: 218
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: driver id
+Parameter 2: #bytes
+Parameter 3: null
+
+Sample ID: 78900234381
+Sample Time: 2025-01-01 04:03:17.539
+Session ID: 167
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234276
+Sample Time: 2025-01-01 04:01:28.358
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: g95m1mywrdmu2
+SQL Operation: SELECT
+Wait Event: db file sequential read
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900234269
+Sample Time: 2025-01-01 04:01:21.067
+Session ID: 162
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900234221
+Sample Time: 2025-01-01 04:00:31.162
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: g95m1mywrdmu2
+SQL Operation: SELECT
+Wait Event: db file sequential read
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900234212
+Sample Time: 2025-01-01 04:00:21.792
+Session ID: 23
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900234212
+Sample Time: 2025-01-01 04:00:21.792
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900234116
+Sample Time: 2025-01-01 03:58:41.961
+Session ID: 202
+Session Type: BACKGROUND
+SQL ID: 9bd61v53p81sk
+SQL Operation: PL/SQL EXECUTE
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900234115
+Sample Time: 2025-01-01 03:58:40.921
+Session ID: 207
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: idn
+Parameter 2: value
+Parameter 3: where
+
+Sample ID: 78900234114
+Sample Time: 2025-01-01 03:58:39.881
+Session ID: 207
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: idn
+Parameter 2: value
+Parameter 3: where
+
+Sample ID: 78900234113
+Sample Time: 2025-01-01 03:58:38.841
+Session ID: 207
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: library cache: bucket mutex X
+Parameter 1: idn
+Parameter 2: value
+Parameter 3: where
+
+Sample ID: 78900234112
+Sample Time: 2025-01-01 03:58:37.801
+Session ID: 207
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: idn
+Parameter 2: value
+Parameter 3: where
+
+Sample ID: 78900234111
+Sample Time: 2025-01-01 03:58:36.761
+Session ID: 207
+Session Type: BACKGROUND
+SQL ID: 04vd3ua81u3kg
+SQL Operation: INSERT
+Wait Event: null
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900234110
+Sample Time: 2025-01-01 03:58:35.721
+Session ID: 207
+Session Type: BACKGROUND
+SQL ID: 2z5wq6272zuat
+SQL Operation: INSERT
+Wait Event: null
+Parameter 1: name|mode
+Parameter 2: object #
+Parameter 3: 0
+
+Sample ID: 78900234001
+Sample Time: 2025-01-01 03:56:42.372
+Session ID: 167
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233974
+Sample Time: 2025-01-01 03:56:14.296
+Session ID: 213
+Session Type: FOREGROUND
+SQL ID: 47dazbsjw9yft
+SQL Operation: DROP USER
+Wait Event: null
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900233959
+Sample Time: 2025-01-01 03:55:58.696
+Session ID: 213
+Session Type: FOREGROUND
+SQL ID: g95m1mywrdmu2
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233938
+Sample Time: 2025-01-01 03:55:36.859
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233937
+Sample Time: 2025-01-01 03:55:35.819
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233936
+Sample Time: 2025-01-01 03:55:34.789
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233935
+Sample Time: 2025-01-01 03:55:33.749
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233768
+Sample Time: 2025-01-01 03:52:40.075
+Session ID: 33
+Session Type: BACKGROUND
+SQL ID: 9j3m4chd1mj5n
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233718
+Sample Time: 2025-01-01 03:51:48.078
+Session ID: 23
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233523
+Sample Time: 2025-01-01 03:48:25.297
+Session ID: 162
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: slave id
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233482
+Sample Time: 2025-01-01 03:47:42.663
+Session ID: 206
+Session Type: BACKGROUND
+SQL ID: c7fnaqcmbm0b5
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233406
+Sample Time: 2025-01-01 03:46:23.629
+Session ID: 37
+Session Type: BACKGROUND
+SQL ID: 6xwz5yxdtax0c
+SQL Operation: UPDATE
+Wait Event: null
+Parameter 1: slave id
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233401
+Sample Time: 2025-01-01 03:46:18.429
+Session ID: 27
+Session Type: BACKGROUND
+SQL ID: 8gbt6t0s3jn0t
+SQL Operation: UPSERT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233241
+Sample Time: 2025-01-01 03:43:32.044
+Session ID: 167
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233060
+Sample Time: 2025-01-01 03:40:23.82
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: ampw9ddqufjd3
+SQL Operation: PL/SQL EXECUTE
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233059
+Sample Time: 2025-01-01 03:40:22.78
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233058
+Sample Time: 2025-01-01 03:40:21.75
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233057
+Sample Time: 2025-01-01 03:40:20.7
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233056
+Sample Time: 2025-01-01 03:40:19.67
+Session ID: 206
+Session Type: FOREGROUND
+SQL ID: dq2dfhzctg69m
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900233055
+Sample Time: 2025-01-01 03:40:18.62
+Session ID: 200
+Session Type: BACKGROUND
+SQL ID: c2h8tpm85b5gb
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: slave id
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900233017
+Sample Time: 2025-01-01 03:39:39.107
+Session ID: 3
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232855
+Sample Time: 2025-01-01 03:36:50.64
+Session ID: 33
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232751
+Sample Time: 2025-01-01 03:35:02.491
+Session ID: 3
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232678
+Sample Time: 2025-01-01 03:33:46.589
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: 5naazub8wzb2u
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900232677
+Sample Time: 2025-01-01 03:33:45.539
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: 5naazub8wzb2u
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900232676
+Sample Time: 2025-01-01 03:33:44.509
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: 5naazub8wzb2u
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900232675
+Sample Time: 2025-01-01 03:33:43.459
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: 5naazub8wzb2u
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: FileOperation
+Parameter 2: fileno
+Parameter 3: filetype
+
+Sample ID: 78900232627
+Sample Time: 2025-01-01 03:32:53.542
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: g95m1mywrdmu2
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: file#
+Parameter 2: block#
+Parameter 3: blocks
+
+Sample ID: 78900232626
+Sample Time: 2025-01-01 03:32:52.502
+Session ID: 216
+Session Type: FOREGROUND
+SQL ID: g95m1mywrdmu2
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900232535
+Sample Time: 2025-01-01 03:31:17.79
+Session ID: 162
+Session Type: BACKGROUND
+SQL ID: 8gbt6t0s3jn0t
+SQL Operation: UPSERT
+Wait Event: null
+Parameter 1: slave id
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232481
+Sample Time: 2025-01-01 03:30:21.637
+Session ID: 23
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232405
+Sample Time: 2025-01-01 03:29:02.606
+Session ID: 23
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232386
+Sample Time: 2025-01-01 03:28:42.868
+Session ID: 179
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+
+Sample ID: 78900232326
+Sample Time: 2025-01-01 03:27:40.297
+Session ID: 216
+Session Type: BACKGROUND
+SQL ID: c7fnaqcmbm0b5
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900232325
+Sample Time: 2025-01-01 03:27:39.257
+Session ID: 216
+Session Type: BACKGROUND
+SQL ID: c7fnaqcmbm0b5
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900232180
+Sample Time: 2025-01-01 03:25:08.401
+Session ID: 218
+Session Type: FOREGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: buffer#
+Parameter 2: sync scn
+Parameter 3: null
+
+Sample ID: 78900232179
+Sample Time: 2025-01-01 03:25:07.362
+Session ID: 218
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900232178
+Sample Time: 2025-01-01 03:25:06.311
+Session ID: 218
+Session Type: FOREGROUND
+SQL ID: afcz0dh295hzp
+SQL Operation: SELECT
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900232177
+Sample Time: 2025-01-01 03:25:05.271
+Session ID: 218
+Session Type: FOREGROUND
+SQL ID: ampw9ddqufjd3
+SQL Operation: PL/SQL EXECUTE
+Wait Event: null
+Parameter 1: Bytes
+Parameter 2: where
+Parameter 3: null
+
+Sample ID: 78900232040
+Sample Time: 2025-01-01 03:22:42.727
+Session ID: 167
+Session Type: BACKGROUND
+SQL ID: null
+SQL Operation: null
+Wait Event: null
+Parameter 1: timeout
+Parameter 2: null
+Parameter 3: null
+

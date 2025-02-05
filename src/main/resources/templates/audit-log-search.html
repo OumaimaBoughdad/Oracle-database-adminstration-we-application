@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechercher les Logs d'Audit</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="my-4">Rechercher les Logs d'Audit</h1>
+    <form action="/audit-logs/search" method="post">
+        <div class="mb-3">
+            <label for="user" class="form-label">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="user" name="user" placeholder="Entrez le nom d'utilisateur" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Rechercher</button>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

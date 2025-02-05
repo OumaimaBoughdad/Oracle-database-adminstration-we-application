@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle DB Admin</title>
+    <style>
+        /* Général Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        header img {
+            width: 60px; /* Taille du logo */
+            height: auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        /* Container for the links */
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Individual link cards */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card a {
+            display: inline-block;
+            color: #34495e;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: 2px solid #34495e;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #34495e;
+            color: #fff;
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+        }
+
+        .buttons-container a {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: 2px solid #34495e;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            width: 45%;
+            text-align: center;
+        }
+
+        .buttons-container a:hover {
+            background-color: #34495e;
+            color: #fff;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #34495e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Oracle Database Administration</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Manage Users</h2>
+        <a href="/oracle-users">Accéder</a>
+    </div>
+
+    <div class="card">
+        <h2>Performance Dashboard</h2>
+        <a href="/performance">Accéder</a>
+    </div>
+
+    <div class="card">
+        <h2>RMAN</h2>
+        <a href="/backup">Accéder</a>
+    </div>
+
+    <div class="card">
+        <h2>AUDIT</h2>
+        <a href="/audit-logs">Accéder</a>
+    </div>
+
+    <div class="card">
+        <h2>Consulter les requêtes lentes</h2>
+        <a href="/slow-queries">Accéder</a>
+    </div>
+
+    <div class="card">
+        <h2>Choisir Table ou Index</h2>
+        <div class="buttons-container">
+            <a href="/database/table-stats">Choisir Table</a>
+            <a href="/database/index-stats">Choisir Index</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Oracle Database Admin. All rights reserved.</p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Oracle Users List</title>-->
+<!--    <script>-->
+<!--        function confirmDelete() {-->
+<!--            return confirm("Are you sure you want to delete this user?");-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Oracle Users List</h1>-->
+<!--<a href="/oracle-users/create">Create New User</a>-->
+
+<!--<table border="1">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>Username</th>-->
+<!--        <th>Account Status</th>-->
+<!--        <th>Default Tablespace</th>-->
+<!--        <th>Used Quota (Bytes)</th>-->
+<!--        <th>Max Quota (Bytes)</th>-->
+<!--        <th>Granted Roles</th>  &lt;!&ndash; Column for roles &ndash;&gt;-->
+<!--        <th>Actions</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="user : ${users}">-->
+<!--        <td th:text="${user['user_name']}"></td>-->
+<!--        <td th:text="${user['account_status']}"></td>-->
+<!--        <td th:text="${user['tablespace']}"></td>-->
+<!--        <td th:text="${user['used_space']}"></td>-->
+<!--        <td th:text="${user['quota']}"></td>-->
+<!--        <td th:text="${user['granted_roles']}"></td>  &lt;!&ndash; Display roles or 'ALL' &ndash;&gt;-->
+<!--        <td>-->
+<!--            <a th:href="@{/oracle-users/update/{username}(username=${user['user_name']})}"-->
+<!--               th:attr="onclick='return confirmQuotaUpdate(${user.quota});'">Update</a> |-->
+<!--            <a th:href="@{/oracle-users/delete/{username}(username=${user['user_name']})}"-->
+<!--               onclick="return confirmDelete();">Delete</a>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Users List</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafc;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+
+        /* Section d'informations supplémentaires */
+        div {
+            text-align: center;
+            margin: 20px auto;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            width: 60%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        div p {
+            margin: 5px 0;
+            color: #34495e;
+            font-size: 14px;
+        }
+
+        /* Liens d'action */
+        a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tableaux */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        thead {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        thead th {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #eaf6ff;
+        }
+
+        td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+        }
+
+        /* Boutons d'action */
+        td a {
+            margin-right: 10px;
+            color: #e74c3c;
+        }
+
+        td a:hover {
+            color: #c0392b;
+        }
+
+        /* Bouton "Create New User" et "Actions" */
+        a[href*="create"], a[href*="user-actions"] {
+            display: inline-block;
+            margin: 10px auto;
+            text-align: center;
+            background-color: #27ae60;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        a[href*="create"]:hover, a[href*="user-actions"]:hover {
+            background-color: #1e8449;
+        }
+
+    </style>
+    <script>
+        function confirmDelete() {
+            return confirm("Are you sure you want to delete this user?");
+        }
+    </script>
+</head>
+<body>
+<h1>Oracle Users List</h1>
+
+<!-- Display Password Lifetime and Lock Time -->
+<div>
+    <p><strong>Password Expiration (days):</strong> <span th:text="${settings['PASSWORD_LIFE_TIME']}"></span></p>
+    <p><strong>Account Lock Time (days):</strong> <span th:text="${settings['PASSWORD_LOCK_TIME']}"></span></p>
+</div>
+<a href="/oracle-users/create">Create New User</a> |
+<a href="/oracle-users/user-actions">Actions</a>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Account Status</th>
+        <th>Default Tablespace</th>
+        <th>Additional Tablespace</th>
+        <th>Used Quota (Bytes)</th>
+        <th>Max Quota (Bytes)</th>
+        <th>Granted Roles</th>  <!-- Column for roles -->
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user : ${users}">
+        <td th:text="${user['user_name']}"></td>
+        <td th:text="${user['account_status']}"></td>
+        <td th:text="${user['default_tablespace']}"></td> <!-- Default tablespace -->
+        <td th:text="${user['tablespace_name']}"></td> <!-- Additional tablespace -->
+        <td th:text="${user['used_space']}"></td>
+        <td th:text="${user['quota']}"></td>
+        <td th:text="${user['granted_roles']}"></td>
+        <td>
+            <a th:href="@{/oracle-users/delete/{username}(username=${user['user_name']})}"
+               onclick="return confirmDelete();">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

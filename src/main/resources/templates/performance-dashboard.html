@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<h1>Performance Dashboard</h1>
+
+<a href="/index">Back to Main Dashboard</a>
+
+<div>
+    <h2>Download Reports</h2>
+    <button onclick="downloadAwrReport()">Download AWR Report</button>
+    <button onclick="downloadAshReport()">Download ASH Report</button>
+</div>
+<div>
+    <h2>Real-Time Resource Usage</h2>
+    <canvas id="realtimeChart"></canvas>
+</div>
+
+<div>
+    <div>
+        <h2>Download Reports</h2>
+        <button onclick="downloadAwrReport()">Download AWR Report</button>
+        <button onclick="downloadAshReport()">Download ASH Report</button>
+    </div>
+
+    <script>
+        // Download AWR report as a text file
+        function downloadAwrReport() {
+            window.location.href = '/performance/awrReport';
+        }
+
+        // Download ASH report as a text file
+        function downloadAshReport() {
+            window.location.href = '/performance/ashReport';
+        }
+    </script>
+
+</div>
+
+<script>
+    // Chart.js Real-Time Resource Usage
+    const ctx = document.getElementById('realtimeChart').getContext('2d');
+    const realtimeChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: [], // Time labels
+            datasets: [
+                { label: 'CPU', data: [], borderColor: 'red', fill: false },
+                { label: 'I/O', data: [], borderColor: 'blue', fill: false },
+                { label: 'Memory', data: [], borderColor: 'green', fill: false }
+            ]
+        },
+        options: {
+            scales: {
+                x: { title: { display: true, text: 'Time' } },
+                y: { title: { display: true, text: 'Usage' } }
+            }
+        }
+    });
+
+    // Fetch Real-Time Stats and Update Chart
+    function fetchRealTimeStats() {
+        fetch('/performance/realtime')
+            .then(response => response.json())
+            .then(data => {
+                const now = new Date().toLocaleTimeString();
+                realtimeChart.data.labels.push(now);
+                realtimeChart.data.datasets[0].data.push(data.cpu);
+                realtimeChart.data.datasets[1].data.push(data.io);
+                realtimeChart.data.datasets[2].data.push(data.memory);
+                realtimeChart.update();
+            });
+    }
+    setInterval(fetchRealTimeStats, 5000); // Update every 5 seconds
+
+    // Fetch AWR Data
+    function fetchAwr() {
+        fetch('/performance/awr')
+            .then(response => response.json())
+            .then(data => {
+                const awrTableBody = document.getElementById('awrTableBody');
+                awrTableBody.innerHTML = '';
+                data.slice(0, 10).forEach(row => { // Display only the first 10 entries
+                    const tr = document.createElement('tr');
+                    // Add each field dynamically
+                    Object.values(row).forEach(value => {
+                        const td = document.createElement('td');
+                        td.textContent = value;
+                        tr.appendChild(td);
+                    });
+                    awrTableBody.appendChild(tr);
+                });
+                // Initialize DataTables without search functionality
+                $('#awrTable').DataTable({
+                    searching: false,
+                    paging: false,
+                    info: false
+                });
+            });
+    }
+
+    // Fetch ASH Data
+    function fetchAsh() {
+        fetch('/performance/ash')
+            .then(response => response.json())
+            .then(data => {
+                const ashTableBody = document.getElementById('ashTableBody');
+                ashTableBody.innerHTML = '';
+                data.slice(0, 10).forEach(row => { // Display only the first 10 entries
+                    const tr = document.createElement('tr');
+                    Object.values(row).forEach(value => {
+                        const td = document.createElement('td');
+                        td.textContent = value;
+                        tr.appendChild(td);
+                    });
+                    ashTableBody.appendChild(tr);
+                });
+                // Initialize DataTables without search functionality
+                $('#ashTable').DataTable({
+                    searching: false,
+                    paging: false,
+                    info: false
+                });
+            });
+    }
+</script>
+</body>
+</html>
